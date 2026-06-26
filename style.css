@@ -381,3 +381,40 @@ footer{
 }
 
 
+/* Mobile Menu */
+@media(max-width:900px){
+
+.nav-links.show{
+    display:flex;
+    flex-direction:column;
+    position:absolute;
+    top:80px;
+    right:8%;
+    background:white;
+    width:220px;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+}
+
+/* Active Nav */
+
+.nav-links a.active{
+    color:#d46a92;
+    font-weight:600;
+}
+
+/* Scroll Animation */
+
+.hidden-animation{
+    opacity:0;
+    transform:translateY(40px);
+    transition:all .8s ease;
+}
+
+.show-animation{
+    opacity:1;
+    transform:translateY(0);
+}
